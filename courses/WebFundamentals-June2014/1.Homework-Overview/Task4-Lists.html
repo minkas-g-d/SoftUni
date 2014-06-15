@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>Task 4 - Lists</title>
         <style>
+            body { font-family: "Trebuchet MS", Helvetica, sans-serif; }  
+        
+            #lists-wrapper { 
+                border: 1px solid #ddd; 
+                border-radius: 8px;
+                margin: 40px auto; 
+                width: 28%; 
+            }
+            h4 { margin: 10px; }
             ol.upper-roman {
                 list-style-type: upper-roman;
+                margin: 16px 0 16px 16px;
             }
             ol.lower-alpha {
                 list-style-type: lower-alpha;
@@ -22,39 +33,42 @@
         </style>
     </head>
     <body>
-        <ol class="upper-roman">
-            <li>List Item 1
-                <ol class="lower-alpha">
-                    <li>Nested Item 1.1.</li>
-                    <li>Nested Item 1.2.</li>
-                </ol>
-            </li>
-            <li>List Item 2
-                <ol>
-                    <li>Nested Item 2.1.</li>
-                    <li>Nested Item 2.2.
-                        <ul class="circle">
-                            <li>Nested Item 2.2.1.</li>
-                            <li>Nested Item 2.2.2.
-                                <ul class="square">
-                                    <li>Nested Item 2.2.2.1</li>
-                                    <li>Nested Item 2.2.2.2</li>
-                                </ul>
-                            </li>
-                            <li>Nested Item 2.2.3.</li>
-                        </ul>
-                    </li>
-                    <li>Nested Item 2.3.</li>
-                </ol>
-            </li>
-            <li>List Item 3
-                <ul class="disc">
-                    <li>Nested Item 3.1.</li>
-                    <li>Nested Item 3.2.</li>
-                    <li>Nested Item 3.3.</li>
-                </ul>
-            </li>
-            
-        </ol>
+        <div id="lists-wrapper">
+            <h4>Preceding text</h4>
+            <ol class="upper-roman">
+                <li>List Item 1
+                    <ol class="lower-alpha">
+                        <li>Nested Item 1.1.</li>
+                        <li>Nested Item 1.2.</li>
+                    </ol>
+                </li>
+                <li>List Item 2
+                    <ol>
+                        <li>Nested Item 2.1.</li>
+                        <li>Nested Item 2.2.
+                            <ul class="circle">
+                                <li>Nested Item 2.2.1.</li>
+                                <li>Nested Item 2.2.2.
+                                    <ul class="square">
+                                        <li>Nested Item 2.2.2.1</li>
+                                        <li>Nested Item 2.2.2.2</li>
+                                    </ul>
+                                </li>
+                                <li>Nested Item 2.2.3.</li>
+                            </ul>
+                        </li>
+                        <li>Nested Item 2.3.</li>
+                    </ol>
+                </li>
+                <li>List Item 3
+                    <ul class="disc">
+                        <li>Nested Item 3.1.</li>
+                        <li>Nested Item 3.2.</li>
+                        <li>Nested Item 3.3.</li>
+                    </ul>
+                </li>
+                
+            </ol>
+        </div>
     </body>
 </html>

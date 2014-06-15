@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>PowerPoint Slide</title>
         <style>
             body {
                 background: url('slide-bgn-1024x576.jpg') no-repeat center top;
                 color: #F2B254;
-                font-family: Verdana, Arial, sans-serif;
+                font-family: "Trebuchet MS", Helvetica, sans-serif;
             }
+            h1 {
+                background: url('slide-logo.jpg') no-repeat right center;
+                margin: 10px 0;
+                padding: 20px 0;
+            }
+            
             span.khaki {
                 color: #F2B254;
             }
@@ -27,7 +34,7 @@
                 border: 1px solid #999;
                 padding: 5px;
                 margin: 10px 20px;
-                width: 80%;
+                width: 90%;
             }
             
             ul li li {
@@ -37,6 +44,8 @@
                 list-style: none;
                 margin: 3px 0;
             }
+            
+            .inner-text { padding-left: 40px;}
         </style>
     </head>
     <body>
@@ -49,16 +58,18 @@
                     <li>&lt;h3&gt;SubHeading 3&lt;/h3&gt;</li>
                 </ul>
             </li>
-            <li><span class="white">Paragraph Tags</span> &lt;p&gt;<span class="white"> - </span>&lt;/p&gt;
+            <li><span class="white">Paragraph Tags</span> &lt;p&gt;
                 <ul>
                     <li>&lt;p&gt;This is my first paragraph&lt;/p&gt;</li>
                     <li>&lt;p&gt;This is my second paragraph&lt;/p&gt;</li>
                 </ul>
             <li><span class="white">Sections</span> &lt;div&gt;<span class="white"> and </span>&lt;span&gt;
                 <ul>
-                    <li>&lt;div style="background: styleblue;"&gt;This is a div&lt;/div&gt;</li>
+                    <li>&lt;div style="background: styleblue;"&gt;<br>
+                        <span class="inner-text">This is a div</span> <br>
+                        &lt;/div&gt;
+                    </li>
                 </ul>
-            </li>
             </li>
         </ul>
         

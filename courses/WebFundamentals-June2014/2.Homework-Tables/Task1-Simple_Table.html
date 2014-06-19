@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Task1 Simple Table</title>
+        <style>
+            body {
+                font-family: Tahoma, Geneva, sans-serif;
+                margin: 50px 20px;
+            }
+            
+            #table-wrapper,
+            #div-wrapper { 
+                float: left;
+                margin-right: 30px;
+                width: 45%;
+            }
+            
+            table {
+                width: 72%;
+                border: 1px solid #999;
+                text-align: left;
+            }
+            
+            th {
+                font-size: 25px;
+                padding-bottom: 30px;
+            }
+            td {
+                vertical-align: top;
+                text-align: left;
+            }
+            .bold { 
+                display: block;
+                font-weight: bold;
+            } 
+            
+            img {
+                margin: 0 8px;
+            }
+            .left {
+                float: left;
+            }
+            .clear {
+                clear: both;
+            }
+            
+            #div-wrapper > div {
+                border: 1px solid #999;
+                padding: 5px;
+                width: 72%;
+            }
+            
+            #div-wrapper h2 {
+                margin: 0 0 30px;
+            }
+            
+            .float-wrapper {
+                float: left;
+                vertical-align: baseline;
+                width: 52%;
+            }
+            
+            .float-wrapper p {
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="table-wrapper">
+            <h1>With Table</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Software University</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="softuni_logo.jpg"  alt=""  /></td>
+                        <td>
+                            <span class="bold">Accessible and high quality software education</span>
+                            Our mission is to make people we train true professionals
+                            in the software industry and support them in finding employment.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="div-wrapper">
+            <h1>With Floating Divs</h1>
+            <div>
+                <h2>Software University</h2>
+                <div>
+                    <img class="left" src="softuni_logo.jpg" alt="" />
+                    <div class="float-wrapper">
+                        <span class="bold">Accessible and high quality software education</span>
+                        <p>Our mission is to make people we train true professionals in the software industry and support them in finding employment.</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="clear"></div>
+    </body>
+</html>

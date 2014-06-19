@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Task6 Life in SoftUni Keyboard</title>
+        <style>
+            body {
+                font-family: Tahoma, Geneva, sans-serif;
+                margin: 100px 20px 0;
+            }
+            
+            table {
+                width: 36%;
+                border: 1px solid #999;
+                margin: 0 auto;
+                text-align: left;
+            }
+            
+            td, th { 
+                height: 60px;
+                padding: 5px;
+            }
+            
+            th { 
+                border: 1px solid #999;
+                padding: 5px;
+                text-align: center;
+            }
+            
+            td {
+                border: 1px solid #999;
+                width: 25%;
+            }
+            
+            .big-text { font-size: 1.6em; }
+            
+            button { 
+                color: blue;
+                height: 100%;
+                width: 100%;
+            }
+            
+            th button { 
+                font-size: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            
+            td button.small-btn { 
+                font-size: 10px;
+                height: 50%;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4"><button onclick="location.href = 'https://softuni.bg/';">Software University</button></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2"><button onclick="location.href = 'https://google.com/';">Google</button></td>
+                    <td colspan="2"><button onclick="location.href = 'https://github.com/';">GitHub</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="location.href = 'https://facebook.com/';">FB</button></td>
+                    <td><button onclick="location.href = 'https://gmail.com/';">Gmail</button></td>
+                    <td><button onclick="location.href = 'https://youtube.com/';">YouTube</button></td>
+                    <td><button onclick="location.href = 'http://2048game.com/';">2048</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="location.href = 'http://www.ayurvedabg.com/food.php';">Food</button></td>
+                    <td colspan="2"><button onclick="location.href = 'http://demo.tutorialzine.com/2010/08/animated-404-not-found-page-css-jquery/404.html';">Game</button></td>
+                    <td>
+                        <button onclick="location.href = 'http://www.bikearea.org/dunav-dobrudja-moreto-i-nie.html';" class="small-btn">Social Life</button>
+                        <button onclick="location.href = 'http://bit.ly/1ngoBsT';" class="small-btn">Sleep</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><button onclick="location.href = 'http://100beers.bg/';" class="big-text">Beer ></button></td>
+                    <td><button onclick="location.href = 'http://bit.ly/1r7Hli0';">WC</button></td>
+                </tr>
+            </tbody>
+        </table>
+    
+    </body>
+</html>
